@@ -5,7 +5,7 @@ This project is a simple Flask application that is containerized using Docker. T
 
 ## Project Structure
 ```
-/flask-docker-app
+/basic-flask-app
 │-- app.py
 │-- run.py
 │-- requirements.txt
@@ -89,23 +89,23 @@ CMD ["run.py"]
 
 ### 1. Build the Docker Image
 ```sh
-docker build -t flask-docker-app .
+docker build -t basic-flask-app .
 ```
 - `docker build` - Creates a Docker image.
-- `-t flask-docker-app` - Tags the image with the name `flask-docker-app`.
+- `-t basic-flask-app` - Tags the image with the name `basic-flask-app`.
 - `.` - Refers to the current directory containing the Dockerfile.
 
 ### 2. Run the Docker Container
 ```sh
-docker run -p 80:8080 flask-docker-app
+docker run -p 80:8080 basic-flask-app
 ```
 - `docker run` - Runs a container from an image.
 - `-p 80:8080` - Maps port **80** on the host to port **8080** inside the container.
-- `flask-docker-app` - Specifies the image to run.
+- `basic-flask-app` - Specifies the image to run.
 
 ### 3. Run the Container in Detached Mode
 ```sh
-docker run -d -p 80:8080 flask-docker-app
+docker run -d -p 80:8080 basic-flask-app
 ```
 - `-d` - Runs the container in the background (detached mode).
 
