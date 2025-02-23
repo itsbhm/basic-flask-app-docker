@@ -5,7 +5,7 @@ This project is a simple Flask application that is containerized using Docker. T
 
 ## Project Structure
 ```
-/basic-flask-app
+/basic-flask-app-docker
 │-- app.py
 │-- run.py
 │-- requirements.txt
